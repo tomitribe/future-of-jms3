@@ -46,14 +46,14 @@ public class MonitorTest {
     @Test
     public void simulateDiskFull() {
 
-        fullEvent.fire(new DiskFull("/tmp/javaone/2014"));
+        fullEvent.fire(new DiskFull("/tmp/geecon/2015"));
 
     }
 
     @Test
     public void simulateDiskReadError() {
 
-        readErrorEvent.fire(new DiskReadError("/tmp/javaone/2015"));
+        readErrorEvent.fire(new DiskReadError("/tmp/geecon/2015"));
 
     }
 
