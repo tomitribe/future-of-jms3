@@ -28,7 +28,7 @@
   <name>Arquillian :: REST</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <openejb.version>5.0.0-SNAPSHOT</openejb.version>
+    <openejb.version>7.0.0-SNAPSHOT</openejb.version>
   </properties>
   <build>
     <defaultGoal>install</defaultGoal>
@@ -67,7 +67,7 @@
               <stripVersion>true</stripVersion>
               <artifactItems>
                 <artifactItem>
-                  <groupId>org.apache.openejb</groupId>
+                  <groupId>org.apache.tomee</groupId>
                   <artifactId>openejb-javaagent</artifactId>
                   <version>${openejb.version}</version>
                   <outputDirectory>${project.build.directory}</outputDirectory>
@@ -95,7 +95,7 @@
     </dependency>
     <!-- spec apis such as javax.persistence -->
     <dependency>
-      <groupId>org.apache.openejb</groupId>
+      <groupId>org.apache.tomee</groupId>
       <artifactId>javaee-api</artifactId>
       <version>7.0-SNAPSHOT</version>
       <scope>provided</scope>
@@ -110,9 +110,9 @@
 
     <!-- openejb container for running tests -->
     <dependency>
-      <groupId>org.apache.openejb</groupId>
+      <groupId>org.apache.tomee</groupId>
       <artifactId>openejb-core</artifactId>
-      <version>5.0.0-SNAPSHOT</version>
+      <version>7.0.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
 
