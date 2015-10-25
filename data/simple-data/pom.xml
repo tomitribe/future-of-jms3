@@ -28,7 +28,7 @@
   <name>Data :: Java EE Data</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <openejb.version>5.0.0-SNAPSHOT</openejb.version>
+    <openejb.version>7.0.0-SNAPSHOT</openejb.version>
   </properties>
   <build>
     <defaultGoal>install</defaultGoal>
@@ -55,7 +55,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.8</version>
+        <version>2.10</version>
         <executions>
           <execution>
             <id>copy</id>
@@ -72,6 +72,7 @@
                   <outputDirectory>${project.build.directory}</outputDirectory>
                 </artifactItem>
               </artifactItems>
+              <useBaseVersion>true</useBaseVersion>
             </configuration>
           </execution>
         </executions>
