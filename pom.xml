@@ -16,5 +16,6 @@
     <module>presentation</module>
     <module>jms-mdb-revamp</module>
     <module>misc</module>
+    <module>jaxrs-reference</module>
   </modules>
 </project>
